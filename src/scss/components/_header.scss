@@ -404,12 +404,12 @@
         display: flex;
         justify-content: flex-end;
         margin-bottom: 15px;
-        .custom__price{
+        .custom__price2{
             font-size: 18px;
             line-height: 20px;
             margin-right: 10px;
         }
-        .old-price{
+        .old-price2{
             font-size: 14px;
             line-height: 20px;
             text-decoration-line: line-through;
@@ -539,12 +539,15 @@
 .footer ul li a{
     font-size: 10px;
     letter-spacing: 0.02em;
-    line-height: 18px;
+    line-height: 15px;
     /* or 180% */
     letter-spacing: 0.02em;
     color: #737373;
     display: block;
     transition: 0.3s all;
+}
+.footer ul li{
+    margin-bottom: 5px;
 }
 .footer ul li a:hover{
     color: #000;
@@ -591,5 +594,89 @@
     .footer{
         padding-right: 50px;
         padding-left: 50px;
+    }
+}
+
+@media(max-width: 1200px){
+    .footer__logo{
+        margin: 0 80px;
+    }
+    .footer__col__wrap--left .footer__col:first-child {
+        margin-right: 100px;
+    }
+    .footer__col__wrap--right .footer__col:last-child {
+        margin-left: 75px;
+    }
+    .footer {
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+}
+
+@media(max-width: 991px){
+    .footer{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .footer__col__wrap--left .footer__col:first-child {
+        margin-right: 35px;
+    }
+    .footer__col__wrap--right .footer__col:last-child {
+        margin-left: 35px;
+    }
+}
+
+@media(max-width: 767px){
+    .footer__logo{
+        order: 1;
+        width: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 26px;
+        img{
+            width: 40px;
+            min-width: 40px;
+        }
+    }
+    .footer__col__wrap{
+        order: 2;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer__wrap{
+        flex-wrap: wrap;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .footer__col__wrap--right .footer__col:last-child{
+        margin-left: 0;
+    }
+    .footer__col__wrap--left .footer__col:first-child{
+        margin-right: 0;
+    }
+    .footer__col__wrap--left{
+        flex: 0 0 52%;
+    }
+    .footer__col__wrap--right{
+        flex: 0 0 48%;
+    }
+    .footer__col{
+        min-height: 150px;
+    }
+    .footer{
+        padding-top: 26px;
+        padding-bottom: 5px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+@media(max-width: 374px){
+    .footer ul li a{
+        line-height: 12px;
+    }
+    .footer ul li{
+        margin-bottom: 8px;
     }
 }

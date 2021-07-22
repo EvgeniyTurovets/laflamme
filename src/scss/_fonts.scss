@@ -1,0 +1,38 @@
+// @include font-face("Muller", "../fonts/MullerRegular", 400, normal);
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/bebas/BebasNeue Regular.otf');
+    src:url('../fonts/bebas/BebasNeue Regular.otf?#iefix') format('embedded-opentype'),
+        url('../fonts/bebas/ttf/BebasNeue Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/bebas/BebasNeue Bold.otf');
+    src:url('../fonts/bebas/BebasNeue Bold.otf?#iefix') format('embedded-opentype'),
+        url('../fonts/bebas/ttf/BebasNeue Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro', sans-serif;
+    src: url('../fonts/SourceSansPro/SourceSansPro-Regular.eot');
+    src:url('../fonts/SourceSansPro/SourceSansPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SourceSansPro/SourceSansPro-Regular.woff') format('woff'),
+        url('../fonts/SourceSansPro/SourceSansPro-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro', sans-serif;
+    src: url('../fonts/SourceSansPro/SourceSansPro-Bold.eot');
+    src:url('../fonts/SourceSansPro/SourceSansPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SourceSansPro/SourceSansPro-Bold.woff') format('woff'),
+        url('../fonts/SourceSansPro/SourceSansPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}

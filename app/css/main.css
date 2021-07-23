@@ -1165,8 +1165,8 @@ h3 {
     position: absolute;
     display: block;
     top: -40px;
-    left: 0;
-    right: 0;
+    left: -16px;
+    right: -16px;
     height: 40px;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2); }
   .breadcrumb a, .breadcrumb span {
@@ -1687,5 +1687,45 @@ input::-webkit-inner-spin-button {
     padding-left: 0;
     padding-top: 35px;
     padding-right: 0; } }
+
+.wrap2 {
+  width: 100%;
+  max-width: calc(1141px + 16px + 16px);
+  margin: 0 auto;
+  padding: 0 16px; }
+
+.tablica-table-wrap {
+  display: flex;
+  margin-bottom: 72px; }
+  .tablica-table-wrap table {
+    width: 50%;
+    border-collapse: collapse; }
+  .tablica-table-wrap tr {
+    border-bottom: 1px solid rgba(31, 31, 31, 0.5); }
+  .tablica-table-wrap thead td {
+    padding-bottom: 31px; }
+  .tablica-table-wrap tbody td {
+    padding-top: 20px;
+    padding-bottom: 14px; }
+  .tablica-table-wrap td {
+    font-size: 20px;
+    line-height: 24px;
+    font-family: var(--bebas);
+    color: #1F1F1F; }
+  .tablica-table-wrap table:last-child td:last-child {
+    width: 60px; }
+
+@media (max-width: 767px) {
+  .tablica-table-wrap {
+    margin-bottom: 0;
+    flex-direction: column; }
+    .tablica-table-wrap table {
+      width: 100%;
+      margin-bottom: 40px; }
+    .tablica-table-wrap table:first-child td:last-child {
+      width: 100px; }
+    .tablica-table-wrap td {
+      font-size: 14px;
+      line-height: 18px; } }
 
 /*# sourceMappingURL=main.css.map */

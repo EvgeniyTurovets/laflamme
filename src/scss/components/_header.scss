@@ -690,6 +690,7 @@
 @media(max-width: 1400px){
     .footer{
         margin: 0 16px;
+        width: calc(100% - 32px);
     }
 }
 @media(max-width: 991px){
@@ -701,4 +702,19 @@
     .footer{
         margin-top: 60px;
     }
+}
+
+
+.header-cart{
+    position: relative;
+    display: flex;
+    span{
+        color: #1F1F1F;
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+@media(max-width: 767px){
+    
 }

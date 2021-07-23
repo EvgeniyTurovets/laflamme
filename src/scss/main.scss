@@ -65,6 +65,7 @@
 
 .main{
     padding-top: 73px;
+    width: 100%;
 }
 @media(max-width: 767px){
     .main{
@@ -292,6 +293,29 @@ h2{
         line-height: 24px;
     }
 }
+
+h3{
+    font-size: 25px;
+    line-height: 30px;
+    font-family: var(--bebas);
+    color: #1F1F1F;
+    margin-bottom: 93px;
+    font-weight: normal;
+}
+@media(max-width: 767px){
+    h3{
+        margin-bottom: 31px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+@media(max-width: 374px){
+    h3{
+        
+        font-size: 16px;
+        line-height:19px;
+    }
+}
 .tovar__item{
     width: 320px;
     max-width: 100%;       
@@ -395,8 +419,10 @@ h2{
 }
 
 @media(max-width: 767px){
+    
     .top-tovarov__wrap{
         margin: 0 -7px;
+        margin-bottom: -80px;
         .tovar__item{
             width: calc(100% / 2 - 15px);
             margin: 0 7px;
@@ -591,13 +617,14 @@ h2{
 
 .breadcrumb{
     margin-top: 74px;
-    margin-bottom: 65px;
+    margin-bottom: 55px;
     ul{
         margin: 0;
         display: flex;
         flex-wrap: wrap;
         li{
             margin-right: 34px;
+            margin-bottom: 10px;
         }
     }
     a, span{
@@ -625,6 +652,28 @@ h2{
     }
     a:hover{
         color: #1F1F1F;
+    }
+}
+@media(max-width: 767px){
+    .breadcrumb{
+        margin-top: 0px;
+        padding-top: 40px;
+        position: relative;
+        margin-bottom: 36px;
+    }
+    .breadcrumb:before{
+        content: "";
+        position: absolute;
+        display: block;
+        top: -40px;
+        left: 0;
+        right: 0;
+        height: 40px;
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+    }
+    .breadcrumb a, .breadcrumb span{
+        font-size: 12px;
+        line-height: 14px
     }
 }
 

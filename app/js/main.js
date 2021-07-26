@@ -118,6 +118,13 @@ document.addEventListener('DOMContentLoaded', function () {
         tovar_tabs.style.marginBottom = "100px";
       }
     });
+  }); // фильтр
+
+  var filter__title = document.querySelectorAll('.filter__title');
+  filter__title.forEach(function (el) {
+    return el.addEventListener('click', function () {
+      el.closest('.filter__row').classList.toggle('active');
+    });
   });
 });
 //# sourceMappingURL=main.js.map

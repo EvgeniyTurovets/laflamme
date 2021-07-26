@@ -131,4 +131,12 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
     }))
+
+
+    // фильтр
+    let filter__title = document.querySelectorAll('.filter__title')
+
+    filter__title.forEach(el => el.addEventListener('click', function(){
+        el.closest('.filter__row').classList.toggle('active')
+    }))
 })

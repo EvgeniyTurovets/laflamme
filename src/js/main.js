@@ -178,4 +178,29 @@ document.addEventListener('DOMContentLoaded', function() {
             filter.classList.toggle('active')
         })
     }   
+
+    Inputmask().mask(document.querySelectorAll("input"));
+
+    if(document.getElementById('order_info')){
+        let order_info = document.getElementById('order_info')
+        let order_info_wrap = document.getElementById('order_info_wrap')
+
+        order_info.addEventListener('click', () => {
+            order_info_wrap.classList.toggle('active')
+        })
+    }
+
+    if(document.querySelectorAll('.order__pay-choose__block').length){
+        let choosePay = document.querySelectorAll('.order__pay-choose__block')
+
+        choosePay.forEach(el => el.addEventListener('click', () =>{
+            if(!el.classList.contains('disabled')){
+                choosePay.forEach((el) =>{
+                    el.classList.remove('active')
+                })
+
+                el.classList.add('active')
+            }
+        }))
+    }
 })

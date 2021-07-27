@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @include('partials/head.html')
+    <body>
+        <div class="app">
+            @include('partials/header.html')
+            <main class="main">
+                <div class="wrap2">
+                    <div class="breadcrumb">
+                        <ul>
+                            <li>
+                                <a href="">Главная</a>
+                            </li>
+                            <li>
+                                <a href="">Новинки</a>
+                            </li>
+                            <li>
+                                <a href="">Футболки</a>
+                            </li>
+                            <li>
+                                <a href="">Polo Ralph Lauren</a>
+                            </li>
+                            <li>
+                                <span>
+                                    Таблица размеров
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <section class="cart">
+                    <div class="wrap2">
+                        <h3>Корзина</h3>
+                        <div class="cart-empty izbranoe">
+                            <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.8" d="M42.5301 4.97833C41.4305 3.71708 40.125 2.71657 38.6881 2.03396C37.2512 1.35134 35.7111 1 34.1557 1C32.6004 1 31.0602 1.35134 29.6233 2.03396C28.1864 2.71657 26.8809 3.71708 25.7814 4.97833L23.4994 7.59463L21.2175 4.97833C18.9965 2.43189 15.9841 1.00132 12.8431 1.00132C9.70213 1.00132 6.68978 2.43189 4.46877 4.97833C2.24775 7.52476 1 10.9785 1 14.5797C1 18.1809 2.24775 21.6346 4.46877 24.181L23.4994 46L42.5301 24.181C43.6301 22.9204 44.5028 21.4236 45.0982 19.7761C45.6936 18.1287 46 16.3629 46 14.5797C46 12.7964 45.6936 11.0306 45.0982 9.38321C44.5028 7.73578 43.6301 6.23898 42.5301 4.97833Z" stroke="#1F1F1F" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                
+                            <span>Вы не добавили ни одного товара</span>
+                            <a href="" class="btn btn-reset">в магазин</a>  
+                        </div>
+                    </div>
+                    
+                </section>
+                
+            </main>
+            @include('partials/footer.html')
+        </div>
+        <script src="js/vendor.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

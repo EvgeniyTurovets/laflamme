@@ -1,6 +1,11 @@
 @import 'vars';
 @import "./components/header";
-
+input,textarea, button{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+input::placeholder,textarea::placeholder{
+    font-family: 'Source Sans Pro', sans-serif;
+}
 .btn{
     background-color: rgba(#1F1F1F, 0.7);
     color: #fff;
@@ -299,7 +304,7 @@ h3{
     line-height: 30px;
     font-family: var(--bebas);
     color: #1F1F1F;
-    margin-bottom: 93px;
+    margin-bottom: 73px;
     font-weight: normal;
 }
 @media(max-width: 767px){
@@ -676,6 +681,18 @@ h3{
         line-height: 14px
     }
 }
-
+.btn2{
+    padding: 0;
+    height: 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 160px;
+    max-width: 100%;
+    font-size: 12px;
+}
 @import "./pages/catalog";
 @import "./pages/korzina";
+@import "./pages/izbranoe";
+@import "./pages/order";

@@ -163,5 +163,29 @@ document.addEventListener('DOMContentLoaded', function () {
       filter.classList.toggle('active');
     });
   }
+
+  Inputmask().mask(document.querySelectorAll("input"));
+
+  if (document.getElementById('order_info')) {
+    var order_info = document.getElementById('order_info');
+    var order_info_wrap = document.getElementById('order_info_wrap');
+    order_info.addEventListener('click', function () {
+      order_info_wrap.classList.toggle('active');
+    });
+  }
+
+  if (document.querySelectorAll('.order__pay-choose__block').length) {
+    var choosePay = document.querySelectorAll('.order__pay-choose__block');
+    choosePay.forEach(function (el) {
+      return el.addEventListener('click', function () {
+        if (!el.classList.contains('disabled')) {
+          choosePay.forEach(function (el) {
+            el.classList.remove('active');
+          });
+          el.classList.add('active');
+        }
+      });
+    });
+  }
 });
 //# sourceMappingURL=main.js.map

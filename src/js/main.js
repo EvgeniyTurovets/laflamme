@@ -134,9 +134,48 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     // фильтр
-    let filter__title = document.querySelectorAll('.filter__title')
+    if(document.querySelectorAll('.filter__title')){
+        let filter__title = document.querySelectorAll('.filter__title')
 
-    filter__title.forEach(el => el.addEventListener('click', function(){
-        el.closest('.filter__row').classList.toggle('active')
-    }))
+        filter__title.forEach(el => el.addEventListener('click', function(){
+            el.closest('.filter__row').classList.toggle('active')
+        }))
+    }
+    
+
+    // добавить в избраное
+    if(document.querySelectorAll('.add-wich')){
+        let addWich = document.querySelectorAll('.add-wich')
+
+        addWich.forEach(el => el.addEventListener('click', function(){
+            el.classList.toggle('active')
+        }))
+    }
+    
+    // фильтр товаров
+    if(document.getElementById('filter')){
+        let filter = document.getElementById('filter')
+        let catalog__top = document.querySelector('.catalog__top')
+        let catalog__wrap = document.querySelector('.catalog__wrap')
+
+        const filterRefresh = () =>{
+            if(window.innerWidth < 768){
+                catalog__top.append(filter)
+            }else{
+                catalog__wrap.prepend(filter)
+            }
+        } 
+        filterRefresh();
+
+        window.addEventListener('resize', ()=>{
+            filterRefresh();
+        })
+
+        let filterToggle = document.getElementById('filter-toggle')
+
+        filterToggle.addEventListener('click', ()=>{
+            filterToggle.classList.toggle('active')
+            filter.classList.toggle('active')
+        })
+    }   
 })

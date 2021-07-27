@@ -461,8 +461,10 @@
 
     .order__pay-btn{
         display: block;
-        margin: 0 auto;
+        margin-left: 16px;
         margin-top: 26px;
+        width: 196px;
+        font-size: 14px;
     }
     .order__pay-choose-text{
         margin-top: 10px;

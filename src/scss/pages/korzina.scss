@@ -182,6 +182,15 @@
     .count-block{
         width: 85px;
     }
+    .count-block input{
+        transition: 0.3s all;
+    }
+    .count-block:hover{
+        input{
+            border-color: #999;
+        }
+    }
+    
 }
 
 .cart__item__price{

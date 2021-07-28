@@ -1198,6 +1198,9 @@ h3 {
   max-width: 100%;
   font-size: 12px; }
 
+.nice-select.open, .nice-select:active, .nice-select:focus, .nice-select:hover {
+  border-color: #999; }
+
 .top-tovarov.top-tovarov--nomain .top-tovarov__wrap {
   margin-bottom: 0; }
 
@@ -2291,6 +2294,10 @@ input::-webkit-inner-spin-button {
     margin-bottom: 4px; }
   .cart__item__prop .count-block {
     width: 85px; }
+  .cart__item__prop .count-block input {
+    transition: 0.3s all; }
+  .cart__item__prop .count-block:hover input {
+    border-color: #999; }
 
 .cart__item__price {
   display: flex;
@@ -3004,5 +3011,81 @@ input::-webkit-inner-spin-button {
     margin-bottom: 19px; }
   .auth__pass {
     max-width: 269px; } }
+
+.data-change {
+  margin-top: 27px;
+  display: flex;
+  flex-wrap: wrap; }
+  .data-change .btn {
+    height: 37px;
+    width: 204px;
+    margin-right: 30px;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: bold;
+    margin-bottom: 15px; }
+
+@media (max-width: 1240px) {
+  .data-change {
+    margin-left: 32px; } }
+
+@media (max-width: 559px) {
+  .data-change {
+    margin-left: 0px;
+    justify-content: space-between;
+    margin: 0 -7px;
+    margin-top: 27px; }
+  .data-change .btn {
+    margin-right: 0px;
+    flex: 1;
+    width: 126px;
+    font-size: 12px;
+    height: 28px;
+    margin: 0 7px; } }
+
+.data__info__t {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  color: #1F1F1F;
+  margin-bottom: 9px; }
+
+.data__info__text {
+  font-size: 14px;
+  line-height: 18px;
+  /* or 129% */
+  letter-spacing: 0.02em;
+  color: #1F1F1F;
+  margin-bottom: 17px; }
+
+.data__info ul {
+  margin-bottom: 15px;
+  margin-top: 15px; }
+
+.data__info li {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 18px;
+  /* or 129% */
+  letter-spacing: 0.02em;
+  color: #1F1F1F;
+  margin-bottom: 15px; }
+  .data__info li svg {
+    margin-right: 12px; }
+
+.data__info__bot {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  /* or 129% */
+  letter-spacing: 0.02em;
+  color: #1F1F1F;
+  margin-bottom: 3px; }
+
+@media (max-width: 767px) {
+  .data__info {
+    margin-top: -40px; } }
 
 /*# sourceMappingURL=main.css.map */

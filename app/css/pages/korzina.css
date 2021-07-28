@@ -168,6 +168,10 @@
     margin-bottom: 4px; }
   .cart__item__prop .count-block {
     width: 85px; }
+  .cart__item__prop .count-block input {
+    transition: 0.3s all; }
+  .cart__item__prop .count-block:hover input {
+    border-color: #999; }
 
 .cart__item__price {
   display: flex;

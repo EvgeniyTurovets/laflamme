@@ -203,4 +203,47 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }))
     }
+
+
+    if(document.querySelector('.auth')){
+       
+        let btnLogin = document.getElementById('btn-login')
+        let btnReg = document.getElementById('btn-reg')
+        let btnFogot = document.getElementById('btn-fogot')
+        let loginWrap = document.getElementById('login-wrap')
+        let regWrap = document.getElementById('reg-wrap')
+        let fogotWrap = document.getElementById('fogot-wrap')
+        let auth__item = document.querySelectorAll('.auth__item')
+
+        btnLogin.addEventListener('click', ()=>{
+            btnReg.classList.remove('active')
+            btnLogin.classList.add('active')
+
+            auth__item.forEach((el) =>{
+                el.classList.remove('active')
+            })
+
+            loginWrap.classList.add('active')
+        })
+
+
+        btnReg.addEventListener('click', ()=>{
+            btnLogin.classList.remove('active')
+            btnReg.classList.add('active')
+
+            auth__item.forEach((el) =>{
+                el.classList.remove('active')
+            })
+
+            regWrap.classList.add('active')
+        })
+
+        btnFogot.addEventListener('click', ()=>{
+            auth__item.forEach((el) =>{
+                el.classList.remove('active')
+            })
+
+            fogotWrap.classList.add('active')
+        })
+    }
 })

@@ -187,5 +187,37 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   }
+
+  if (document.querySelector('.auth')) {
+    var btnLogin = document.getElementById('btn-login');
+    var btnReg = document.getElementById('btn-reg');
+    var btnFogot = document.getElementById('btn-fogot');
+    var loginWrap = document.getElementById('login-wrap');
+    var regWrap = document.getElementById('reg-wrap');
+    var fogotWrap = document.getElementById('fogot-wrap');
+    var auth__item = document.querySelectorAll('.auth__item');
+    btnLogin.addEventListener('click', function () {
+      btnReg.classList.remove('active');
+      btnLogin.classList.add('active');
+      auth__item.forEach(function (el) {
+        el.classList.remove('active');
+      });
+      loginWrap.classList.add('active');
+    });
+    btnReg.addEventListener('click', function () {
+      btnLogin.classList.remove('active');
+      btnReg.classList.add('active');
+      auth__item.forEach(function (el) {
+        el.classList.remove('active');
+      });
+      regWrap.classList.add('active');
+    });
+    btnFogot.addEventListener('click', function () {
+      auth__item.forEach(function (el) {
+        el.classList.remove('active');
+      });
+      fogotWrap.classList.add('active');
+    });
+  }
 });
 //# sourceMappingURL=main.js.map

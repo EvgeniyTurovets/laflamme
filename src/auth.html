@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @include('partials/head.html')
+    <body>
+        <div class="app">
+            @include('partials/header.html')
+            <main class="main">
+                <div class="wrap2">
+                    <div class="breadcrumb">
+                        <ul>
+                            <li>
+                                <a href="">Главная</a>
+                            </li>
+                            <li>
+                                <span>
+                                    Личный кабинет
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <section class="auth">
+                    <div class="wrap2">
+                        <div class="auth__top">
+                            <div class="auto__top__item active" id="btn-login">войти</div>
+                            <div class="auto__top__item" id="btn-reg">регистрация</div>
+                        </div>
+                        <div class="auth__wrap">
+                            <div class="auth__item active" id="login-wrap">
+                                <div class="auth__block">
+                                    <form class="auth__block__wrap">
+                                        <input class="input" placeholder="Email или телефон ">
+                                        <input class="input" placeholder="Пароль">
+                                        <button class="btn-reset btn btn2" type="button">войти</button>
+                                        <a href="javascript:" id="btn-fogot">Забыли пароль?</a>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="auth__item" id="reg-wrap">
+                                <div class="auth__block">
+                                    <form class="auth__block__wrap">
+                                        <input class="input" placeholder="Имя">
+                                        <input class="input" placeholder="Фамилия">
+                                        <input class="input" placeholder="Email">
+                                        <input class="input" placeholder="+7 (___) ___-__-__" data-inputmask="'mask': '+7 (999) 999-99-99'">
+                                        <input class="input" placeholder="Пароль">
+                                        <button class="btn-reset btn btn2" type="button">зарегистрироваться</button>
+                                        <label class="checkbox">
+                                            <input type="checkbox" checked>
+                                            <span></span>
+                                            <div>
+                                                Я соглашаюсь с <a href="">политикой конфиденциальности</a>
+                                            </div>
+                                           
+                                        </label>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="auth__item" id="fogot-wrap">
+                                <div class="auth__pass">
+                                    <div class="auth__pass__t">восстановление пароля</div>
+                                    <div class="auth__pass__text">
+                                        Введите адрес электронной почты. 
+                                        Мы пришлем вам инструкцию по созданию нового пароля.
+                                    </div>
+                                </div>
+                                <div class="auth__block auth__block--pass">
+                                    <form class="auth__block__wrap">
+                                        <input class="input" placeholder="Email">
+                                        <button class="btn-reset btn btn2" type="button">отправить</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+            </main>
+            @include('partials/footer.html')
+        </div>
+        <script src="js/vendor.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

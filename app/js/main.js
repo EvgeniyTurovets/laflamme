@@ -219,5 +219,16 @@ document.addEventListener('DOMContentLoaded', function () {
       fogotWrap.classList.add('active');
     });
   }
+
+  if (document.querySelector('.app.black')) {
+    var app = document.querySelector('.app');
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 0) {
+        app.classList.remove('active');
+      } else {
+        app.classList.add('active');
+      }
+    });
+  }
 });
 //# sourceMappingURL=main.js.map

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @include('partials/head.html')
+    <body>
+        <div class="app black active">
+            @include('partials/header.html')
+            <main class="main">
+                <section class="first_black_section" style="background-image: url('./img/polit-cet/1.jpg');">
+                    <div class="wrap2">
+                        <div class="polit-block">
+                            политика и ценообразование нашего магазина
+                            <span>& ответ на часто задаваемые вопросы</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="polit-sec">
+                    <div class="wrap2">
+                        <div class="polit-sec__wrap">
+                            <div class="polit-sec__block">
+                                <div class="polit-sec__t">Почему такая цена?</div>
+                                <div class="polit-sec__text">
+                                    Мы закупаем продукцию оптом у сертифицированных поставщиков со скидкой в 60-80% относительно MSRP (рекомендованной розничной цены) в США, <br>
+                                    в среднем за 10-15 тыс. $ за партию раз в 1,5 - 2 месяца.<br> 
+                                    Это позволяет нам получить самые минимальные цены на<br> товар, доставку, его дальнейшее таможенное оформление.
+                                                    
+                                </div>
+                            </div>
+                            <div class="polist-sec__img">
+                                <img src="./img/polit-cet/2.jpg">
+                            </div>
+                            <div class="polist-sec__img polist-sec__img2">
+                                <img src="./img/polit-cet/3.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="polit-slider-sec">
+                    <div class="wrap2">
+                        <div class="polit-sec__t">рассмотрим на конкретном примере </div>
+                    </div>
+                </section>
+            </main>
+            @include('partials/footer.html')
+        </div>
+        <script src="js/vendor.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

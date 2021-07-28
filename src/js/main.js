@@ -246,4 +246,17 @@ document.addEventListener('DOMContentLoaded', function() {
             fogotWrap.classList.add('active')
         })
     }
+
+    if(document.querySelector('.app.black')){
+        let app = document.querySelector('.app')
+        
+        window.addEventListener('scroll', ()=>{
+            
+            if(window.scrollY > 0){    
+                app.classList.remove('active')
+            }else{
+                app.classList.add('active')
+            }
+        })
+    }
 })

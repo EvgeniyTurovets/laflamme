@@ -695,9 +695,12 @@ h3{
 .nice-select.open, .nice-select:active, .nice-select:focus, .nice-select:hover{
     border-color: #999;
 }
+
+
 @import "./pages/catalog";
 @import "./pages/korzina";
 @import "./pages/izbranoe";
 @import "./pages/order";
 @import "./pages/auth";
 @import "./pages/data";
+@import "./pages/polit-cen";

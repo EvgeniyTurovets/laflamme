@@ -1,0 +1,162 @@
+.first_black_section{
+    height: 100vh;
+    background-size: cover;
+    color: #fff;
+    animation: fadein 0.5s;
+    .wrap2{
+        height: 100%;
+    }
+}
+
+.polit-block{
+    max-width: 587px;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 50px;
+    font-family: var(--bebas);
+    height: 100%;    
+    display: flex;
+    margin-left: auto;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 120px;
+    span{
+        font-size: 25px;
+        line-height: 25px;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: normal;
+        display: block;
+        margin-top: 4px;
+    }
+}
+.polit-sec{
+    margin-bottom: 174px;
+}
+.polit-sec__wrap{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 91px;
+}
+.polit-sec__block{
+    max-width: 521px;
+    padding-top: 5px;
+    margin-right: 60px;
+}
+.polit-sec__t{
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 50px;
+    font-family: var(--bebas);
+    margin-bottom: 8px;
+}
+.polit-sec__text{
+    font-size: 20px;
+    line-height: 30px;
+}
+.polist-sec__img{
+    width: 49%;
+}
+
+.polist-sec__img.polist-sec__img2{
+    margin-top: -170px;
+}
+
+@media(max-width: 1024px){
+    .first_black_section{
+        height:  526px;
+    }
+}
+
+@media(max-width: 767px){
+    .polit-block{
+        padding-bottom: 77px;
+        font-size: 25px;
+        line-height: 25px;
+        max-width: 288px;
+        margin-left: 0;
+        margin-right: auto;
+        span{
+            font-size: 16px;
+            line-height: 16px;
+        }
+    }
+    .first_black_section{
+        background-position: top right -130px;
+    }
+}
+
+
+@media(max-width: 1200px){
+    .polist-sec__img {
+        width: 45%;
+    }
+    .polit-sec__block{
+        max-width: 52%;
+        margin-right: 15px;
+    }
+    .polist-sec__img.polist-sec__img2{
+        margin-top: -70px;
+    }
+}
+
+@media(max-width: 991px){
+    .polit-sec__block{
+        width: 100%;
+        max-width: 100%;
+        margin-right: 0;
+        padding-right: 50px;
+        margin-bottom: 27px;
+    }
+
+    .polist-sec__img{
+        width: 50%;
+        order: 2;
+        padding-left: 8px;
+        padding-right: 0;
+        img{
+            height: 100%;
+        }
+    }
+    
+    .polist-sec__img.polist-sec__img2{
+        order: 1;
+        margin-top: 0;
+        padding-right: 8px;
+        padding-left: 0;
+    }
+
+    .polit-sec__wrap{
+        padding-top: 67px;
+    }
+    .polit-sec__text{
+        max-width: 575px;
+    }
+}
+
+
+@media(max-width: 767px){
+    .polit-sec__t{
+        font-size: 25px;
+        line-height: 25px;
+    }
+    .polit-sec__text{
+        font-size: 14px;
+        line-height: 18px;
+        max-width: 275px;
+        br{
+            display: none;
+        }
+    }
+    .polit-sec__block{
+        margin-bottom: 17px;
+    }
+    .polit-sec{
+        margin-bottom: 115px;
+    }
+}
+
+.polit-slider-sec{
+    .polit-sec__t{
+        max-width: 480px;
+    }
+}

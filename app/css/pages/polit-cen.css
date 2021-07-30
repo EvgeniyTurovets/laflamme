@@ -1,6 +1,7 @@
 .first_black_section {
   height: 100vh;
   background-size: cover;
+  background-color: #1F1F1F;
   color: #fff;
   -webkit-animation: fadein 0.5s;
   animation: fadein 0.5s; }

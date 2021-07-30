@@ -159,4 +159,262 @@
     .polit-sec__t{
         max-width: 480px;
     }
+    .swiper-button-next, .swiper-button-prev{
+        color: #000;
+    }
+    .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled{
+        display: none;
+    }
+    .swiper-button-next{
+        right: 33px;
+    }
+    .swiper-button-prev{
+        left: 33px;
+    }
+}
+
+.polit-slider-sec-slide{
+    display: flex;
+    align-items: flex-start;
+    img{
+        width: 50%;
+        margin-right: 84px;
+    }
+    div{
+        flex: 1;
+    }
+    p{
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 18px;
+        margin-top: 0;
+    }
+}
+
+.polit-decor-text{
+    font-weight: bold;
+    font-size: 110px;
+    line-height: 110px;
+    font-family: var(--bebas);
+    color: #EFEFEF;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.polit-slider-sec{
+    margin-bottom: 255px;
+}
+
+.polit-question{
+    position: relative;
+    background-size: cover;
+    background-position: top center;
+    padding-top: 100px;
+    padding-bottom: 78px;
+    color: #fff;
+   
+}
+.polit-question:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: block;
+    background-color: rgba(0,0,0,0.85);
+    z-index: 1;
+}
+.polit-question .wrap2{
+    position: relative;
+    z-index: 2;
+}
+
+.tabs__w{
+    opacity: 0;
+    transition: 0.3s all;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 469px;
+    p{
+        font-size: 25px;
+        line-height: 25px;
+        /* or 100% */
+
+        letter-spacing: 0.04em;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+}
+
+.tabs__t{
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+    color: #FFFFFF;
+    opacity: 0.5;
+    max-width: 475px;
+    font-family: var(--bebas);
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+.tabs__t:hover{
+    opacity: 1;
+}
+.tabs__item{
+    margin-bottom: 82px;
+}
+.tabs__item:last-child{
+    margin-bottom: 0;
+}
+.tabs__t:before{
+    content: "";
+    display: block;
+    position: absolute;
+    height: 4px;
+    background-color: transparent;
+    top: 100%;
+    transition: 0.3s all;
+    width: 0;
+}
+.tabs__item.active{
+    .tabs__t{
+        opacity: 1;
+        
+    }
+    .tabs__t:before{
+        background-color: #fff;
+        width: 70%;
+    }
+    .tabs__w{
+        opacity: 1;
+        animation: fadein 0.5s;
+    }
+}
+@media(max-width: 1300px){
+    .polit-slider-sec-slide{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .polit-slider-sec{
+       
+        .swiper-button-next{
+            right: 10px;
+        } 
+        .swiper-button-prev{
+            left: 10px
+        }
+    }
+}
+@media(max-width: 991px){
+    .polit-slider-sec{
+        margin-bottom:75px;
+    }
+    .polit-slider-sec-slide p{
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+@media(max-width: 767px){
+    .polit-slider-sec-slide{
+        flex-direction: column;
+        img{
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 27px;
+        }
+        div{
+            flex: auto;
+            max-width: 300px;
+            margin-left: -35px;
+        }
+    }
+
+    .polit-decor-text{
+
+        font-size: 24.7vw;
+        line-height: 1;
+    }
+    .polit-slider-sec .polit-sec__t{
+        max-width: 137px;
+    }
+
+    .polit-slider-sec {
+        .swiper-button-next:after, .swiper-button-prev:after{
+            font-size: 16px;
+        }
+    }
+    .polit-slider-sec-slide{
+        padding-right: 35px;
+        padding-left: 35px;
+    }
+    .polit-slider-sec .swiper-button-next, .polit-slider-sec .swiper-button-prev {
+        top:23vw;
+    }
+}
+
+
+@media(max-width: 991px){
+    .tabs__w{
+        position: initial;
+        display: none;
+        transform: translate(0);
+        margin-top: 21px;
+    }
+    .tabs__item.active{
+        .tabs__w{
+            display: block;
+        }
+    }
+    .polit-question{
+        background-size: 1900px;
+        background-position: top right 35%;   
+    }
+}
+
+@media(max-width:767px){
+    .polit-question{
+        padding-top: 42px;
+        padding-bottom: 70px;
+    }
+    .tabs__item{
+        margin-bottom: 60px;
+    }
+
+    .tabs__t{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .tabs__w p{
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.04em;
+    }
+}
+
+.black__footer{
+    background-color: #1F1F1F;
+    .footer{
+        margin-top: 0;
+        border-top:1px solid rgba(255, 255, 255, 0.4);
+    }
+    .footer__logo path{
+        fill: #fff;
+    }
+    .footer__t{
+        color: #fff;
+    }
+    .footer ul li a{
+        color: #fff;
+    }
+    .f-soc path{
+        fill: #fff;
+    }
+    .footer ul li a:hover{
+        opacity: 0.7;
+    }
 }

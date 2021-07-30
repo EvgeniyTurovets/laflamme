@@ -564,7 +564,7 @@
     color: #000;
 }
 
-.footer__logo img{
+.footer__logo svg{
     width: 67px;
     min-width: 67px;
     position: relative;
@@ -645,9 +645,10 @@
         display: flex;
         justify-content: center;
         margin-bottom: 26px;
-        img{
+        svg{
             width: 40px;
             min-width: 40px;
+            height: 40px;
         }
     }
     .footer__col__wrap{

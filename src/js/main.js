@@ -259,4 +259,29 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         })
     }
+
+
+    const swiperPolit = new Swiper('.swiper-container', {
+        
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      
+    });
+
+    // политика вопросы табы
+    if(document.querySelector('.polit-question')){
+        let tabs__t = document.querySelectorAll('.tabs__t')
+        
+        tabs__t.forEach(el => el.addEventListener('click', ()=>{
+            if(!el.closest('.tabs__item').classList.contains('active')){
+                tabs__t.forEach((el2)=>{
+                    el2.closest('.tabs__item').classList.remove('active')
+                }) 
+
+                el.closest('.tabs__item').classList.add('active')
+            }
+        }))
+    }
 })

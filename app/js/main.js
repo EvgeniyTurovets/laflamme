@@ -230,5 +230,26 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   }
+
+  var swiperPolit = new Swiper('.swiper-container', {
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    }
+  }); // политика вопросы табы
+
+  if (document.querySelector('.polit-question')) {
+    var tabs__t = document.querySelectorAll('.tabs__t');
+    tabs__t.forEach(function (el) {
+      return el.addEventListener('click', function () {
+        if (!el.closest('.tabs__item').classList.contains('active')) {
+          tabs__t.forEach(function (el2) {
+            el2.closest('.tabs__item').classList.remove('active');
+          });
+          el.closest('.tabs__item').classList.add('active');
+        }
+      });
+    });
+  }
 });
 //# sourceMappingURL=main.js.map

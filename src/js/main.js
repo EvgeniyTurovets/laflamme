@@ -284,4 +284,26 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }))
     }
+
+    if(document.querySelector('.new-menu')){
+        let newMenuParents = document.querySelectorAll('.new-menu .parent')
+
+        newMenuParents.forEach(el => el.addEventListener('click', (e)=>{
+            e.preventDefault()
+
+            newMenuParents.forEach((el2)=>{
+                el2.classList.remove('active')
+            })
+
+            el.classList.add('active')
+        }))
+
+        document.addEventListener('click', function(e) {
+            if (!document.querySelector('.new-menu .parent').contains(e.target)) {
+                newMenuParents.forEach((el2)=>{
+                    el2.classList.remove('active')
+                })
+            }
+        })
+    }
 })

@@ -251,5 +251,25 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   }
+
+  if (document.querySelector('.new-menu')) {
+    var newMenuParents = document.querySelectorAll('.new-menu .parent');
+    newMenuParents.forEach(function (el) {
+      return el.addEventListener('click', function (e) {
+        e.preventDefault();
+        newMenuParents.forEach(function (el2) {
+          el2.classList.remove('active');
+        });
+        el.classList.add('active');
+      });
+    });
+    document.addEventListener('click', function (e) {
+      if (!document.querySelector('.new-menu .parent').contains(e.target)) {
+        newMenuParents.forEach(function (el2) {
+          el2.classList.remove('active');
+        });
+      }
+    });
+  }
 });
 //# sourceMappingURL=main.js.map

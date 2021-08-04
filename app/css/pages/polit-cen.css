@@ -33,6 +33,7 @@
 
 .polit-sec__wrap {
   display: flex;
+  align-items: flex-start;
   flex-wrap: wrap;
   padding-top: 91px; }
 

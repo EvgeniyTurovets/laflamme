@@ -650,7 +650,10 @@
     color: #1f1f1f; } }
 
 input, textarea, button {
-  font-family: 'Source Sans Pro', sans-serif; }
+  font-family: 'Source Sans Pro', sans-serif;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none; }
 
 input::-moz-placeholder, textarea::-moz-placeholder {
   font-family: 'Source Sans Pro', sans-serif; }
@@ -1021,9 +1024,9 @@ h3 {
 @media (max-width: 767px) {
   .top-tovarov__wrap {
     margin: 0 -7px;
-    margin-bottom: -80px; }
+    margin-bottom: 0px; }
     .top-tovarov__wrap .tovar__item {
-      width: calc(100% / 2 - 15px);
+      width: calc(100% / 2 - 14px);
       margin: 0 7px;
       margin-bottom: 81px; } }
 
@@ -1168,7 +1171,7 @@ h3 {
   .blog-main__item:before {
     background-color: rgba(31, 31, 31, 0.8); }
   .show-more {
-    margin-bottom: 39px; } }
+    margin-bottom: 60px; } }
 
 @media (max-width: 559px) {
   .blog-main {
@@ -3168,6 +3171,7 @@ input::-webkit-inner-spin-button {
 
 .polit-sec__wrap {
   display: flex;
+  align-items: flex-start;
   flex-wrap: wrap;
   padding-top: 91px; }
 

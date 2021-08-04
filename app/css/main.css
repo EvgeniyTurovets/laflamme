@@ -653,7 +653,8 @@ input, textarea, button {
   font-family: 'Source Sans Pro', sans-serif;
   appearance: none;
   -webkit-appearance: none;
-  -moz-appearance: none; }
+  -moz-appearance: none;
+  border-radius: 0; }
 
 input::-moz-placeholder, textarea::-moz-placeholder {
   font-family: 'Source Sans Pro', sans-serif; }
@@ -3236,8 +3237,6 @@ input::-webkit-inner-spin-button {
     order: 2;
     padding-left: 8px;
     padding-right: 0; }
-    .polist-sec__img img {
-      height: 100%; }
   .polist-sec__img.polist-sec__img2 {
     order: 1;
     margin-top: 0;

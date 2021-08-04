@@ -5,6 +5,7 @@ input,textarea, button{
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
+    border-radius: 0;
 }
 input::placeholder,textarea::placeholder{
     font-family: 'Source Sans Pro', sans-serif;
